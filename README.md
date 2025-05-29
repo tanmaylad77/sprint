@@ -31,5 +31,7 @@ All the methods take the same arguments:
 
 Example is below:
 
+![sprint_examples](sprint_example_use.png)
+
 ## Author
 Tanmay Lad
