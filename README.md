@@ -31,7 +31,7 @@ All the methods take the same arguments in this order:
 
 Example is below:
 
-![sprint_examples](sprint_exampples.png)
+![sprint_examples](sprint_examples.png)
 
 ## Author
 Tanmay Lad
