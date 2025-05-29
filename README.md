@@ -27,7 +27,7 @@ All the methods take the same arguments in this order:
 
 * `s` -> string to print
 * `lvl` -> integer indentation level (optional, default = 0)
-* `l_pad_char` -> left pad indentation character or string (optional, default = " ")
+* `l_pad_char` -> left pad indentation character or string (optional, default = "  ")
 
 Example is below:
 
