@@ -1,10 +1,23 @@
-# Special print utility (Sprint)
-# Tanmay Lad 2019
-# Works like print but adds a fixed-width tag like [ WARN ]
-# with the short message colour-coded
+"""
+Special print utility (Sprint)
 
-# Useful for console debugging/verbose modes (console only)
-from config import COLORS, STYLES, default_l_pad_char, default_max_line_len
+A comprehensive Python printing utility that enhances console output with:
+- Color-coded tags for different message types
+- Automatic indentation detection
+- Text wrapping with configurable line lengths
+- Consistent formatting across all output
+
+Author: Tanmay Lad (2019)
+Enhanced: Rolando Charles (2025)
+
+This module provides various print functions that work like print() but add
+fixed-width, color-coded tags like [ WARN ], [  OK  ], etc., with automatic
+indentation detection and text wrapping capabilities.
+
+Useful for console debugging, verbose modes, and creating professional-looking
+command-line interfaces.
+"""
+from sprint_config import COLORS, STYLES, default_l_pad_char, default_max_line_len
 
 from sprint_utils import *
 

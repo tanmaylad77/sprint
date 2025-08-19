@@ -1,10 +1,22 @@
+"""
+Utility functions for the Sprint printing library.
+
+This module provides core utility functions including:
+- Automatic code indentation detection
+- Text wrapping with proper formatting
+- Helper functions for the main sprint printing functions
+
+Author: Tanmay Lad (2019)
+Enhanced: Rolando Charles (2025)
+"""
+
 # Standard library imports
 import inspect
 import textwrap
 import os
 
 # Local imports
-from config import COLORS, STYLES, default_l_pad_char, default_max_line_len
+from sprint_config import COLORS, STYLES, default_l_pad_char, default_max_line_len
 
 def detect_code_indentation():
     """Automatically detect the indentation level based on the calling code context."""
