@@ -7,8 +7,8 @@ A comprehensive Python printing utility that enhances console output with:
 - Text wrapping with configurable line lengths
 - Consistent formatting across all output
 
-Author: Tanmay Lad (2019)
-Enhanced: Rolando Charles (2025)
+Author: Tanmay Lad
+Contributors: Rolando Charles
 
 This module provides various print functions that work like print() but add
 fixed-width, color-coded tags like [ WARN ], [  OK  ], etc., with automatic
@@ -30,30 +30,37 @@ from sprint_utils import *
 # 'auto_detect' -> [bool] whether to auto-detect code indentation (optional, default = True)
 
 def printwork(s, lvl=0, l_pad_char=default_l_pad_char, max_line_length=default_max_line_len, bold=False, auto_detect=True):
+    """Print a work-in-progress message with a blue dot icon."""
     tag = "[" + COLORS['BLUE'] + " .... " + STYLES['RESET'] + "]"
     print_with_wrapping(tag, s, lvl, l_pad_char, max_line_length, bold, auto_detect)
 
 def printok(s, lvl=0, l_pad_char=default_l_pad_char, max_line_length=default_max_line_len, bold=False, auto_detect=True):
+    """Print a success message with a green OK tag."""
     tag = "[" + COLORS['GREEN'] + "  OK  " + STYLES['RESET'] + "]"
     print_with_wrapping(tag, s, lvl, l_pad_char, max_line_length, bold, auto_detect)
 
 def printfail(s, lvl=0, l_pad_char=default_l_pad_char, max_line_length=default_max_line_len, bold=False, auto_detect=True):
+    """Print a failure message with a red FAILED tag."""
     tag = "[" + COLORS['RED'] + "FAILED" + STYLES['RESET'] + "]"
     print_with_wrapping(tag, s, lvl, l_pad_char, max_line_length, bold, auto_detect)
 
 def printwarn(s, lvl=0, l_pad_char=default_l_pad_char, max_line_length=default_max_line_len, bold=False, auto_detect=True):
+    """Print a warning message with a yellow WARN tag."""
     tag = "[" + COLORS['YELLOW'] + " WARN " + STYLES['RESET'] + "]"
     print_with_wrapping(tag, s, lvl, l_pad_char, max_line_length, bold, auto_detect)
 
 def printdone(s, lvl=0, l_pad_char=default_l_pad_char, max_line_length=default_max_line_len, bold=False, auto_detect=True):
+    """Print a completion message with a green DONE tag."""
     tag = "[" + COLORS['GREEN'] + " DONE " + STYLES['RESET'] + "]"
     print_with_wrapping(tag, s, lvl, l_pad_char, max_line_length, bold, auto_detect)
 
 def printinfo(s, lvl=0, l_pad_char=default_l_pad_char, max_line_length=default_max_line_len, bold=False, auto_detect=True):
+    """Print an informational message with a blue INFO tag."""
     tag = "[" + COLORS['BLUE'] + " INFO " + STYLES['RESET'] + "]"
     print_with_wrapping(tag, s, lvl, l_pad_char, max_line_length, bold, auto_detect)
 
 def printdebug(s, lvl=0, l_pad_char=default_l_pad_char, max_line_length=default_max_line_len, bold=False, auto_detect=True):
+    """Print a debug message with a magenta DEBUG tag."""
     tag = "[" + COLORS['MAGENTA'] + "DEBUG" + STYLES['RESET'] + "]"
     print_with_wrapping(tag, s, lvl, l_pad_char, max_line_length, bold, auto_detect)
 

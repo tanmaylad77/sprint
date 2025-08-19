@@ -6,8 +6,8 @@ This module provides core utility functions including:
 - Text wrapping with proper formatting
 - Helper functions for the main sprint printing functions
 
-Author: Tanmay Lad (2019)
-Enhanced: Rolando Charles (2025)
+Author: Tanmay Lad
+Contributors: Rolando Charles
 """
 
 # Standard library imports
@@ -76,6 +76,10 @@ def detect_code_indentation():
 
 def wrap_text(text, max_length, lpad, tag_length):
     """Helper function to wrap text while preserving indentation and tag formatting."""
+    # Handle None or empty text
+    if text is None:
+        text = ""
+    
     # Calculate available space for text after tag and padding
     available_width = max_length - len(lpad) - tag_length - 1  # -1 for the space after tag
     

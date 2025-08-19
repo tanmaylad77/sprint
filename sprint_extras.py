@@ -6,8 +6,8 @@ This module provides enhanced formatting capabilities including:
 - List formatting with optional numbering
 - Header separators and visual elements
 
-Author: Tanmay Lad (2019)
-Enhanced: Rolando Charles (2025)
+Author: Tanmay Lad
+Contributors: Rolando Charles
 """
 
 from sprint_config import COLORS, STYLES, default_l_pad_char, default_max_line_len

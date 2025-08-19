@@ -132,4 +132,4 @@ printlist(items, "Setup Steps", numbered=True)
 
 ## Author
 
-Original: Tanmay Lad (2019)
+Original: Tanmay Lad
