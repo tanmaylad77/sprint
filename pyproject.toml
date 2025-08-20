@@ -1,0 +1,9 @@
+[project]
+name = "sprint"
+version = "0.1.1"
+description = "Special print utility with color-coded tags and formatting"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "colorama>=0.4.6",
+]

@@ -10,8 +10,8 @@ Author: Tanmay Lad
 Contributors: Rolando Charles
 """
 
-from sprint_config import COLORS, STYLES, default_l_pad_char, default_max_line_len
-from sprint_utils import *
+from .config import COLORS, STYLES, default_l_pad_char, default_max_line_len
+from .utils import *
 
 def printblank(s, lvl=0, l_pad_char=default_l_pad_char, max_line_length=default_max_line_len, bold=False, auto_detect=True):
     """

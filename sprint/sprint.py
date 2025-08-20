@@ -17,9 +17,9 @@ indentation detection and text wrapping capabilities.
 Useful for console debugging, verbose modes, and creating professional-looking
 command-line interfaces.
 """
-from sprint_config import COLORS, STYLES, default_l_pad_char, default_max_line_len
+from .config import COLORS, STYLES, default_l_pad_char, default_max_line_len
 
-from sprint_utils import *
+from .utils import *
 
 ## In the printing functions below:
 # 's' -> string to print
