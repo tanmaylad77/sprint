@@ -11,15 +11,31 @@ A colorful Python printing utility for enhanced console output with automatic in
 - **Cross-platform compatibility** (Windows, macOS, Linux)
 - **Centralized configuration** for easy customization
 
-## Getting Started
+## Installation
+
+### Install using uv (recommended)
+
+```bash
+# Install directly from the project directory
+uv pip install .
+
+# Or install in development mode for local development
+uv pip install -e .
+```
+
+### Install using pip
+
+```bash
+# Install directly from the project directory
+pip install .
+
+# Or install in development mode
+pip install -e .
+```
 
 ### Dependencies
 
-This library requires colorama for cross-platform color support.
-
-```bash
-pip install colorama
-```
+This library requires colorama for cross-platform color support, which is automatically installed with the package.
 
 ### Basic Usage
 
@@ -73,7 +89,7 @@ All functions accept the same parameters:
 The library uses a centralized configuration system. You can modify default values:
 
 ```python
-from sprint_config import default_max_line_len, default_l_pad_char
+from sprint.config import default_max_line_len, default_l_pad_char
 
 # Modify defaults
 default_max_line_len = 100
@@ -106,7 +122,7 @@ def process_data():
 
 #### Tables and Lists
 ```python
-from sprint_extras import printtable, printlist
+from sprint import printtable, printlist
 
 # Print table
 headers = ["Name", "Age", "City"]
@@ -124,11 +140,16 @@ printlist(items, "Setup Steps", numbered=True)
 
 ## Project Structure
 
-- `sprint.py` - Core sprint functions
-- `sprint_utils.py` - Utility functions and text wrapping
-- `sprint_extras.py` - Additional formatting functions
-- `sprint_config.py` - Configuration and imports
-- `test_sprint_features.py` - Basic feature tests
+```
+sprint/
+├── __init__.py          - Package initialization and exports
+├── sprint.py            - Core sprint functions
+├── utils.py             - Utility functions and text wrapping
+├── extras.py            - Additional formatting functions (tables, lists)
+├── config.py            - Configuration and color definitions
+pyproject.toml           - Project configuration and dependencies
+tests/                   - Test files
+```
 
 ## Author
 

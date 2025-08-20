@@ -8,8 +8,8 @@
 git clone <your-repo-url>
 cd sprint
 
-# Install with Poetry
-poetry install
+# Install with uv (recommended)
+uv pip install -e .
 
 # Or install with pip in development mode
 pip install -e .
@@ -17,11 +17,14 @@ pip install -e .
 
 ### Option 2: Install from built package
 ```bash
-# Build the package first
-poetry build
+# Build the package first with uv
+uv build
 
 # Install the built wheel
-pip install dist/sprint-0.1.0-py3-none-any.whl
+uv pip install dist/sprint-0.1.1-py3-none-any.whl
+
+# Or with pip
+pip install dist/sprint-0.1.1-py3-none-any.whl
 ```
 
 ## Usage
@@ -44,21 +47,24 @@ sprint.printinfo("Custom message", bold=True, max_line_length=60)
 
 ## Dependencies
 
-- Python 3.7+
+- Python 3.10+
 - colorama (for cross-platform colors)
 
 ## Development
 
 ```bash
-# Install development dependencies
-poetry install
+# Install development dependencies with uv
+uv pip install -e .
 
-# Run tests
-poetry run pytest
+# Run tests (if pytest is installed)
+pytest
+
+# Or with uv
+uv run pytest
 
 # Build package
-poetry build
+uv build
 
 # Publish to PyPI (when ready)
-poetry publish
+uv publish
 ```
