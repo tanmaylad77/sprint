@@ -16,7 +16,7 @@ import textwrap
 import os
 
 # Local imports
-from sprint_config import COLORS, STYLES, default_l_pad_char, default_max_line_len
+from .config import COLORS, STYLES, default_l_pad_char, default_max_line_len
 
 def detect_code_indentation():
     """Automatically detect the indentation level based on the calling code context."""

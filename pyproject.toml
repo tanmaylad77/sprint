@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "sprint"
+version = "0.1.0"
+description = "Special print utility with color-coded tags and formatting"
+authors = ["Tanmay Lad", "Rolando Charles"]
+readme = "README.md"
+packages = [{include = "sprint"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+colorama = "^0.4.6"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
