@@ -20,6 +20,11 @@ from .extras import (
     printblank, printheader, printtable, printlist
 )
 
+from .utils import (
+    detect_code_indentation, wrap_text, 
+    detect_indentation, print_with_wrapping
+)
+
 __version__ = "0.1.1"
 __all__ = [
     "printwork", "printok", "printfail", "printwarn", 
