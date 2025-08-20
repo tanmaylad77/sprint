@@ -20,7 +20,7 @@ from .extras import (
     printblank, printheader, printtable, printlist
 )
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __all__ = [
     "printwork", "printok", "printfail", "printwarn", 
     "printdone", "printinfo", "printdebug",
